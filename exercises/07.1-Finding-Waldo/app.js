@@ -2,6 +2,16 @@ var people = [ 'Lebron','Aaliyah','Diamond','Dominique','Aliyah','Jazmin','Darne
 
 //loop here to find waldo, use the if conditionals
 
-for (index in people) {
-    people[index].toLowerCase() == 'waldo' && console.log(index);
+for (let letter in par) {
+    let letterLowerCase = par[letter].toLowerCase();
+
+	if (letterLowerCase == " ") {
+        continue
+    } else if (counts[letterLowerCase] == undefined) {
+		counts[letterLowerCase] = 1;
+	} else {
+		counts[letterLowerCase] += 1;
+	}
 }
+
+console.log(counts);
