@@ -7,7 +7,7 @@ let people = [
 ];
 
 let simplifier = function(person){
-	return person.name;
+	return `Hello my name is ${person.name} and I am ${}`;
 };
 
 console.log(people.map(simplifier));
