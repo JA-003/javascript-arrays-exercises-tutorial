@@ -10,3 +10,11 @@ let tasks = [
 ];
 
 //your code here
+
+function remover(status) {
+    return status.done != true;
+};
+
+console.log(
+    tasks.filter(remover)
+);

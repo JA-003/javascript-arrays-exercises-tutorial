@@ -2,4 +2,16 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 //declare your function here
 
+function filterByName(arrayOfNames, string) {
+
+    let stringLowerCased = string.toLowerCase();
+    
+	let filteredArrayOfNames = arrayOfNames.filter(function(name) {
+		return name.includes(stringLowerCased);
+	});
+
+	return filteredArrayOfNames;
+}
+
+
 console.log(filterByName(names, 'am'));
